@@ -1,0 +1,106 @@
+jQuery(function(){
+	//Validation JS
+    var ValidationErrors = new Array();
+    jQuery.fn.validate = function(options){
+        options = jQuery.extend({
+            expression: "return true;",
+            message: "",
+            error_class: "ValidationErrors",
+            error_field_class: "ErrorField",
+            live: true,
+        }, options);
+        var SelfID = jQuery(this).attr("id");
+        var unix_time = new Date();
+        unix_time = parseInt(unix_time.getTime() / 1000);
+        if (!jQuery(this).parents('form:first').attr("id")) {
+            jQuery(this).parents('form:first').attr("id", "Form_" + unix_time);
+        }
+        if (options['live']) {
+            if (jQuery(this).find('input').length > 0) {
+                jQuery(this).find('input').bind('change', function(){
+                    if (validate_field("#" + SelfID, options)) {
+                        if (options.callback_success) 
+                           options.callback_success(this);
+                    }
+                    else {
+                        if (options.callback_failure) 
+                           options.callback_failure(this);
+                    }
+                });
+                jQuery(this).find('input').bind('focus keypress click', function(){
+                    jQuery("#" + SelfID).next('.' + options['error_class']).remove();
+                    jQuery("#" + SelfID).removeClass(options['error_field_class']);
+                });
+
+            }
+            else {
+                jQuery(this).bind('change', function(){
+                    validate_field(this);
+                });
+                jQuery(this).bind('change', function(){
+                	if (validate_field('#' + SelfID)) 
+                    jQuery(this).next('.' + options['error_class']).fadeOut("fast", function(){
+                        jQuery(this).remove();
+                    });
+                    jQuery(this).removeClass(options['error_field_class']);
+                });
+            }
+        }
+        jQuery(this).parents("form").submit(function(){
+            if (validate_field('#' + SelfID)) 
+                return true;
+            else 
+                return false;
+        });
+        function validate_field(id){
+            var self = jQuery(id).attr("id");
+            var expression = 'function Validate(){' + options['expression'].replace(/VAL/g, 'jQuery(\'#' + self + '\').val()') + '} Validate()';
+            var validation_state = eval(expression);
+            if (!validation_state) {
+                if (jQuery(id).next('.' + options['error_class']).length == 0) {
+                    jQuery(id).after('<span class="' + options['error_class'] + '">' + options['message'] + '</span>');
+                    jQuery(id).addClass(options['error_field_class']);
+					//jQuery(id).val('');
+                }
+				return false;
+            }
+		  else 
+			  return true;
+		}
+
+
+        function isDate(id){
+            var currval = jQuery("#" + id).val()
+            var validformat=/^\d{1,2}\/\d{1,2}\/\d{4}$/
+            if (validformat.test(currval))
+            {
+                var dayfield=currval.split("/")[0]
+                var monthfield=currval.split("/")[1]
+                var yearfield=currval.split("/")[2]
+                var dayobj = new Date(yearfield, monthfield-1, dayfield)
+                if (((dayobj.getDate()!=dayfield)||dayobj.getMonth()+1!=monthfield)||(dayobj.getFullYear()!=yearfield))
+                return false;
+                else
+				{	
+				if (yearfield>=1940 && yearfield<=2001)
+					return true;
+				else
+					return false;
+				}
+            }
+        }
+    };
+
+    jQuery.fn.validated = function(callback){
+        jQuery(this).each(function(){
+            if (this.tagName == "FORM") {
+                jQuery(this).submit(function(){
+                    if (ValidationErrors[jQuery(this).attr("id")].length == 0) 
+                        callback();
+						return false;
+                });
+            }
+        });
+    };
+	
+})

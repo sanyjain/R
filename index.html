@@ -1,26 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.forg/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>--|| Retail Site : Wearhouse ||--</title>
-<link href="resources/css/styleguide.css" rel="stylesheet"/>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-52510558-1', 'auto');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
-
-</script>
-
+<link href="resources/css/styleguide.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <div id="wrapper">
+
 
 <div id="header-area">
 
@@ -28,11 +16,11 @@
 
 		<div id="top-rt-menus">
 			<ul>
-			<li><a href="#" style="border-right:none">My Accounts<img src="resources/images/icon_myaccounts.jpg" / border="0" ></a></li>
-			<li><a href="add-to-bag.html">My Cart<img src="resources/images/icon_cart.jpg" / border="0" ></a></li>
-			<li><a href="#">Help</a></li>
-			<li><a href="register.html">Register</a></li>
-			<li><a href="#">Login</a></li>
+			<li><a style="color:#cc96cc">My Accounts<img src="resources/images/icon_myaccounts.jpg" / border="0" ></a></li>
+			<!-- <li><a href="add-to-bag.html">My Cart<img src="resources/images/icon_cart.jpg" / border="0" ></a></li> -->
+			<li><a>Help</a></li>
+			<li><a href="register.html"style="color:#cc96cc">Register</a></li>
+			<li><a href="login.html">Login</a></li>
 			</ul>
 		</div>
 
@@ -44,8 +32,8 @@
 			</div>
 		
 			<div class="search-text" style="padding-top:6px">
-				<form action="post" method="get">
-  				<input name="search" type="text" value="" size="22" />
+				<!--<form action="post" method="get">-->
+  				<input name="search" type="text" value="" size="22" onclick="alert('Sorry!... The Demo does not have this functionality!');"/>
 				</form>
 			</div>
         
@@ -61,66 +49,87 @@
 <div id="main-nav-panel">
 		<div id="navlinks">
 			<ul>
-        	<li><a href="#" style="margin-left:-30px; padding-left:0px">Women</a></li>
-        	<li><a href="#">Men</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Shoes</a></li>
-            <li><a href="#">Accessories</a></li>
+        	<li><a href="women.html" style="margin-left:-30px; padding-left:0px">Women</a></li>
+        	<li><a href="men.html">Men</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
             <li><a href="elle.html">Brand</a></li>
-            <li><a href="#" style="border-right:none">Beauty</a></li>
+            <li><a href="beauty.html" style="border-right:none">Beauty</a></li>
        		</ul>
         </div>
 </div>
 
 <div class="clear"></div>
 
-<div id="header-image"></div>
+<div id="header-image">
+
+    <a href="men.html" class="menLink">Men</a>
+    <a href="women.html" class="womenLink">Women</a>
+    <a href="kids.html" class="kids">Kids</a>
+
+</div>
 
 <div class="column-wise" style="width:535px; margin-left:6px"><img src="resources/images/shopallbrands.jpg" width="535" height="68" /><br/><br/>
-                <div class="column-wise" style="width:150px"><img src="resources/images/offers.jpg" width="150" height="329" border="0" usemap="#Map" />
-                <map name="Map" id="Map">
-                  <area shape="rect" coords="22,188,92,202" href="deals.html" target="_self" alt="Deals" />
-                  <area shape="rect" coords="21,168,91,182" href="accessories.html" target="_self" alt="Accessories" />
-                  <area shape="rect" coords="21,148,91,162" href="sportswear.html" target="_self" alt="Sports Wear" />
-                  <area shape="rect" coords="22,128,92,142" href="winterwear.html" target="_self" alt="Winter Wear" /><area shape="rect" coords="21,108,91,122" href="formalwear.html" target="_self" alt="Formal Wear" />
-                </map>
+              <!--   <div class="column-wise" style="width:150px">
+                <div class="email">
+                <div style="float:left; height:39px; width:90%; border:0px solid; margin-left:5px;"></div>
+                 <form id="form1" name="form1" method="post" action="" style="padding-left:2px;">
+                  <label for="emailID"></label>
+                  <input style="font-size:11px" size="15%" type="text" name="emailID" id="emailID" value="Enter Your EmailID"/>
+                
+                <div style="float:right; margin:2px; margin-right:4px;"><a href="#" onclick="alert('Sorry!... The Demo does not have this functionality!');" ><img src="resources/images/emailgo.jpg" width="21" height="21" border="0" usemap="#Map" /></a></div></form>
                 </div>
+                <div><img src="resources/images/offers0.jpg" width="150" height="131" border="0" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="21,88,86,102" href="accessories.html" target="_self" alt="Accessories" />
+                  </map>
+                </div>
+			<div>
+            <a href="accessories.html" style="none"><img src="resources/images/offers1.jpg" width="150" height="111" border="0" /></a>
+            </div>
+</div> -->
 
-                <div class="column-wise" style="width:370px; margin-left:7px">
+                <div class="column-wise" style="width:470px; margin-left:7px">
                   WELCOME TO  THE BRAND<br/><br/>
                   The No.1 destination for shopping online in India. Looking for a site that has the best fashion collection at the best possible price, ships for free and offers free returns too? Quench your thirst by browsing through over 150 brands and 5000 styles for men, women and kids. From popular brands to high-street brands and high-end designer labels, bags and socks to match your shoes, we have a huge repository of formal, casual, sporty, ethnic5 and party wear to choose from. What are you waiting for? Get, set, shop!<br/>
-                  <img src="resources/images/hl-line.gif" /><br/>
+                  <img src="resources/images/hl-line.gif" style="width:470px;" /><br/>
                   CUSTOMER TESTIMONIALS<br/><br/>
                   <span class="OY-text">The time taken to deliver the product was excellent and the service was superb. Keep it up! " <br/>   
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Customer Name</span><br/>
-                <img src="resources/images/hl-line.gif" /><br/>
+                <img src="resources/images/hl-line.gif" style="width:470px;" /><br/>
                 <img src="resources/images/30000styles.jpg" />
                 </div>              
 </div>
 
   <div class="column-wise" style="width:230px; margin-left:3px">
-                <img src="resources/images/payment-options.jpg" /><br/>
-    <img src="resources/images/shippingpolicy.jpg" border="0" usemap="#Map2" />
-<map name="Map2" id="Map2"><area shape="rect" coords="15,25,226,58" href="#" alt="100 Days Return Policy" />
-<area shape="rect" coords="15,64,227,98" href="#" alt="Free and Fast Delivery" />
-<area shape="rect" coords="16,103,229,138" href="#" alt="Best Price Guaranteed" />
-<area shape="rect" coords="12,144,108,195" href="#" alt="Verisign Secured" />
-</map><br/>
-                <img src="resources/images/sn.jpg" />
+                <img src="resources/images/Indian.jpg" border="0"/>
+                <img src="resources/images/sn.jpg" border="0" usemap="#Map2" />
+                <map name="Map2" id="Map2">
+                  <area shape="rect" coords="22,37,44,61" href="https://www.facebook.com/" target="_blank" alt="Facebook" />
+                  <area shape="rect" coords="65,40,108,60" href="https://www.youtube.com" target="_blank" alt="Youtube" />
+                  <area shape="rect" coords="129,36,155,62" href="https://twitter.com/" target="_blank" alt="Youtube" />
+                  <area shape="rect" coords="172,36,197,60" href="#" target="_blank" alt="#"  />
+                </map>
   </div>
   
   <div class="column-wise" style="width:203px; margin-left:3px">
-  <img src="resources/images/adv.jpg"/>
+  		<div>
+ 		 <a href="accessories.html" style="none"><img src="resources/images/adv1.jpg" border="0"/></a>
+  		</div>
+        <div>
+ 		 <a href="shoes.html"><img src="resources/images/adv2.jpg" border="0"/></a>
+  		</div>
   </div>
   <div class="clear"></div>
   
   <div id="footer-area">
   		<div id="footer-menus">
 			<ul>
-			<li><a href="#">About us</a></li>
-			<li><a href="#">Privacy Policy</a></li>
-			<li><a href="#">Sitemap</a></li>
-			<li><a href="#" style="border-right:none">Terms of use</a></li>
+			<li><a href="#" onclick="alert('Sorry!... The Demo does not have this functionality!');">About us</a></li>
+			<li><a href="#" onclick="alert('Sorry!... The Demo does not have this functionality!');">Privacy Policy</a></li>
+			<li><a href="#" onclick="alert('Sorry!... The Demo does not have this functionality!');">Sitemap</a></li>
+			<li><a href="#" onclick="alert('Sorry!... The Demo does not have this functionality!');" style="border-right:none">Terms of use</a></li>
 			</ul>
 		</div>
   </div>
