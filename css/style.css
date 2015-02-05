@@ -1,0 +1,484 @@
+html {height: 100%; width: 100%;}
+body {margin: 0; padding: 0; width: 100%;}
+*{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */	
+margin: 0; padding: 0;
+}
+
+img {border: none; outline: 0;}
+
+.contentContainer { float: left; width: 100%; height: auto; position: relative; background: none;}
+.contentHomepage {margin: 0 auto; width: 1109px; height: 1000px; background: url("../images/homepage.jpg") no-repeat left top;}
+.contentPage2 {margin: 0 auto; width: 1109px; height: 4658px; background: url("../images/page2.jpg") no-repeat left top;}
+.contentPage2 a.btn-lrnmore {background: none; top: 330px; left: 318px; height: 30px; width: 150px;}
+.contentPage3 {margin: 0 auto; width: 1109px; height: auto;}
+.contentPage4 {margin: 0 auto; width: 1109px; height: 968px; background: url("../images/page4.jpg") no-repeat -60px top;}
+
+a.btn-lrnmore {
+	display: block;
+	width: 115px;
+	height: 40px;
+	position: absolute;
+	top: 415px;
+	right: 515px;
+	background: none;
+	}
+
+a.goHome {
+	display: block;
+	width: 205px;
+	height: 45px;
+	position: absolute;
+	top: 50px;
+	left: 150px;
+	background: none;
+	}
+
+
+/* HOMEPAGE */
+
+.patch1 {
+	float: left;
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+	}
+
+.patch2 {
+	float: left;
+	position: absolute;
+	width: 358px;
+	height: 28px;
+	background: #fff;
+	top: 150px;
+	right: 13%;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+	}
+
+.patch3 {
+	float: left;
+	position: absolute;
+	width: 234px;
+	height: 30px;
+	background: #fff;
+	top: 110px;
+	right: 12.3%;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+	}
+
+.linkPatch_bundles1 {
+	float: left;
+	width: 60px;
+	height: 20px;
+	background: none;
+	position: absolute;
+	left: 154px;
+	top: 157px;
+	}
+
+.linkPatch_bundles2 {
+	float: left;
+	width: 160px;
+	height: 120px;
+	background: none;
+	position: absolute;
+	left: 154px;
+	top: 499px;
+	}
+
+.linkPatch_internet1 {
+	float: left;
+	width: 56px;
+	height: 20px;
+	background: none;
+	position: absolute;
+	left: 222px;
+	top: 157px;
+	}
+
+.linkPatch_internet2 {
+	float: left;
+	width: 160px;
+	height: 120px;
+	background: none;
+	position: absolute;
+	left: 354px;
+	top: 499px;
+	}
+
+.linkPatch_homeph {
+	float: left;
+	width: 86px;
+	height: 20px;
+	background: none;
+	position: absolute;
+	left: 288px;
+	top: 157px;
+	}
+
+.linkPatch_homeph2 {
+	float: left;
+	width: 160px;
+	height: 120px;
+	background: none;
+	position: absolute;
+	left: 752px;
+	top: 499px;
+	}
+
+.linkPatch_tv {
+	float: left;
+	width: 30px;
+	height: 20px;
+	background: none;
+	position: absolute;
+	left: 378px;
+	top: 157px;
+	}
+
+.linkPatch_tv2 {
+	float: left;
+	width: 160px;
+	height: 120px;
+	background: none;
+	position: absolute;
+	left: 554px;
+	top: 499px;
+	}
+
+.linkPatch_homeSec {
+	float: left;
+	width: 84px;
+	height: 20px;
+	background: none;
+	position: absolute;
+	left: 418px;
+	top: 157px;
+	}
+
+.linkPatch_homeSec2 {
+	float: left;
+	width: 160px;
+	height: 120px;
+	background: none;
+	position: absolute;
+	left: 936px;
+	top: 499px;
+	}
+
+
+.linkPatch_veriWrless {
+	float: left;
+	width: 95px;
+	height: 20px;
+	background: none;
+	position: absolute;
+	left: 518px;
+	top: 157px;
+	}
+
+.linkPatch_spOff {
+	float: left;
+	width: 90px;
+	height: 20px;
+	background: none;
+	position: absolute;
+	left: 636px;
+	top: 157px;
+	}
+
+.linkPatch_lernMore1 {
+	float: left;
+	width: 120px;
+	height: 32px;
+	background: none;
+	position: absolute;
+	left: 138px;
+	top: 910px;
+	}
+
+
+
+	
+
+
+
+/* PAGE 3 */
+
+
+
+.header {
+	float: left;
+	width: 100%;
+	height: 161px;
+	position: relative;
+	}
+
+.btnHome {
+	display: block;
+	width: 205px;
+	height: 45px;
+	position: absolute;
+	top: 20px;
+	left: 82px;
+	background: none;
+	}
+
+.footer {
+	float: left;
+	width: 100%;
+	height: 147px;
+	}
+
+.mainContntWrapper {
+	float: left;
+	width: 100%;
+	height: auto;
+	background: url("../images/tile-page.gif") repeat-y left top;
+	}
+
+.mainContntWrapper .colmn1 {
+	float: left;
+	width: 449px;
+	height: auto;
+	background: url("../images/tile-colmn1.gif") repeat-y left top;	
+	text-align: right;
+	padding-right: 7px;
+	}
+
+.mainContntWrapper .colmn1 img {
+	
+	}
+
+.mainContntWrapper .colmn2 {
+	float: right;
+	width: 660px;
+	height: auto;
+	background: url("../images/tile-colmn2.gif") repeat-y left top;
+	}
+
+
+h5.hdngChoseOffr {
+	float: left;
+	margin-top: 20px;
+	font-weight: bold; 
+	font-family: arial, sans-serif; 
+	font-size: 16px; 
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	}
+
+.marginLeft_20px {margin-left: 20px;}
+.marginTop_12px {margin-top: 12px;}
+
+
+/* TABS */
+.tabContainer {
+	float: left;
+	width: 625px;
+	height: auto;
+	background: none;
+	margin-left: 14px;
+	margin-top: 10px;
+	}
+
+.tabContainer h5 {
+	margin-top: 20px;
+	font-weight: bold; 
+	font-family: arial, sans-serif; 
+	font-size: 16px; 
+	margin-top: 6px; 
+	margin-bottom: 20px; 
+	}
+
+.tabContainer ul {
+	list-style: none;
+	float: left;
+	display: inline-block;
+	width: 625px;
+	height: auto;
+	background: none;
+	margin-bottom: 20px;
+	}
+
+.tabContainer ul li {
+	float: left;
+	margin-right: 10px;
+	}
+
+
+/* BUTTON TAB1 */
+.tabContainer ul li a.tab1 {
+	display: block;
+	width: 152px;
+	height: 122px;
+	background: url("../images/btn-addintrnt.jpg") no-repeat;
+	}
+
+.tabContainer ul li a.tab1:hover {
+	background: url("../images/btn-addintrnt-hover.jpg") no-repeat;
+	}
+
+.tabContainer ul li a.tab1.selected {
+	background: url("../images/btn-addintrnt-selected.jpg") no-repeat;
+	}
+
+
+/* BUTTON TAB2 */
+.tabContainer ul li a.tab2 {
+	display: block;
+	width: 152px;
+	height: 122px;
+	background: url("../images/btn-addhomephone.jpg") no-repeat;
+	}
+
+.tabContainer ul li a.tab2:hover {
+	background: url("../images/btn-addhomephone-hover.jpg") no-repeat;
+	}
+
+.tabContainer ul li a.tab2.selected {
+	background: url("../images/btn-addhomephone-selected.jpg") no-repeat;
+	}
+
+
+/* BUTTON TAB3 */
+.tabContainer ul li a.tab3 {
+	display: block;
+	width: 152px;
+	height: 122px;
+	background: url("../images/btn-addprismtv.jpg") no-repeat;
+	}
+
+
+
+/* TABS CONTENT BOXES */
+.tabContainer .contentBox {
+	float: left;
+	width: 625px;
+	height: auto;
+	background: none;
+	position: relative;
+	}
+
+
+.linkPatch_SelCstmize {
+	width: 180px;
+	height: 32px;
+	background: none;
+	position: absolute;
+	top: 160px;
+	right: 32px;
+	}
+
+
+/* END - TABS */
+
+.staticBanner {
+	float: left;
+	width: 639px;
+	height: 227px;
+	background: url("../images/banner.jpg") no-repeat center center;
+	}
+
+	.hide {display: none;}
+
+
+/* OPTION 2 - PAGE 3 */
+
+.opt2_CntnrTabs {
+	float: left;
+	width: 100%;
+	height: auto;
+	background: url("../images/tile-page.gif") repeat-y;
+	padding-left: 68px;
+	}
+
+.opt2_CntnrTabs h5 {font-weight: bold; font-family: arial, sans-serif; font-size: 16px; margin-top: 60px; margin-left: 15px;}
+
+.headingSec {
+	float: left;
+	width: 200px;
+	height: 160px;
+	background: #fff;
+	border-bottom: solid 8px #e1e1e1;
+	}
+
+.tabssec-opt2 {
+	float: left;
+	width: 821px;
+	height: 160px;
+	background: #fff;
+	border-bottom: solid 8px #e1e1e1;
+	padding-top: 15px;
+	}
+
+
+
+.tabssec-opt2 ul {
+	list-style: none;
+	float: left;
+	display: inline-block;
+	width: 625px;
+	height: auto;
+	background: none;
+	margin-bottom: 20px;
+	}
+
+.tabssec-opt2 ul li {
+	float: left;
+	margin-right: 40px;
+	}
+
+/* BUTTON TAB1 */
+.tabssec-opt2 ul li a.tab1 {
+	display: block;
+	width: 152px;
+	height: 122px;
+	background: url("../images/btn-addintrnt.jpg") no-repeat;
+	}
+
+.tabssec-opt2 ul li a.tab1:hover {
+	background: url("../images/btn-addintrnt-hover.jpg") no-repeat;
+	}
+
+.tabssec-opt2 ul li a.tab1.selected {
+	background: url("../images/btn-addintrnt-selected.jpg") no-repeat;
+	}
+
+
+/* BUTTON TAB2 */
+.tabssec-opt2 ul li a.tab2 {
+	display: block;
+	width: 152px;
+	height: 122px;
+	background: url("../images/btn-addhomephone.jpg") no-repeat;
+	}
+
+.tabssec-opt2 ul li a.tab2:hover {
+	background: url("../images/btn-addhomephone-hover.jpg") no-repeat;
+	}
+
+.tabssec-opt2 ul li a.tab2.selected {
+	background: url("../images/btn-addhomephone-selected.jpg") no-repeat;
+	}
+
+
+/* BUTTON TAB3 */
+.tabssec-opt2 ul li a.tab3 {
+	display: block;
+	width: 152px;
+	height: 122px;
+	background: url("../images/btn-addprismtv.jpg") no-repeat;
+	}
+
+
+/* PAGE 4 */

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+	function addinternet() {
+		$("div.contentBox").addClass("hide");
+		$("div.contentBox:eq(0)").removeClass("hide");
+	}
+	function addphone() {
+		$("div.contentBox").addClass("hide");
+		$("div.contentBox:eq(1)").removeClass("hide");
+	}
+	function addinternetphone() {
+		$("div.contentBox").addClass("hide");
+		$("div.contentBox:eq(2)").removeClass("hide");
+	}
+	
+	$("a.tab1").click(function(){
+		 if ($(this).hasClass("selected")) {
+				$(this).removeClass("selected");
+				if ($(this).parent().next().find('a.tab2').hasClass("selected")) {
+					addinternetphone();
+				}
+				else {
+					$(this).parent().next().find('a.tab2').addClass("selected")
+					addinternetphone();
+				}
+			}
+		else {
+			$(this).addClass("selected");
+			if ($(this).parent().next().find('a.tab2').hasClass("selected")) {
+				addphone();
+			}
+			else {
+					addinternet();
+				}
+			}
+	});	
+	
+	$("a.tab2").click(function(){
+		 if ($(this).hasClass("selected")) {
+				$(this).removeClass("selected");
+				if ($(this).parent().prev().find('a.tab1').hasClass("selected")) {
+					addinternet();
+				}
+				else {
+					$(this).parent().prev().find('a.tab1').addClass("selected")
+					addinternet();
+				}
+			}
+		else {
+			$(this).addClass("selected");
+			if ($(this).parent().prev().find('a.tab1').hasClass("selected")) {
+				addphone();
+			}
+			else {
+					$(this).parent().prev().find('a.tab1').addClass("selected")
+					addphone();
+				}
+			}
+	});
+
+		
+});
+</script>
+</head>
+<body>
+
+<div class="contentContainer">
+
+
+        <div class="contentPage3">
+
+
+                    <!-- HEADER -->
+                    <header class="header">
+
+                        <a href="index.html" class="btnHome"></a>
+
+                        <img src="images/header.jpg" />
+
+                    </header>
+                    <!-- END -->
+
+
+
+                    <!-- MAIN CONTENT -->
+                    <div class="mainContntWrapper">
+
+
+                                <!-- WIDE COLUMN -->
+                                <div class="opt2_CntnrTabs">
+
+                                            <!-- COLM 1 -->
+                                            <div class="headingSec">
+
+                                                <h5>Choose Services:</h5>
+
+                                        
+                                            </div>
+                                            <!-- END - COLM 1 -->
+
+
+
+                                            <!-- COLM 2 -->
+                                            <div class="tabssec-opt2">
+
+
+
+                                                <!-- BUTTONS -->
+                                                <ul>
+                                                    <li><a class="tab1 selected" href="#"></a></li>
+                                                    <li><a class="tab2 selected" href="#"></a></li>        
+                                                    <li><a class="tab3"></a></li>
+                                                </ul>
+                                                <!-- END -->
+
+
+
+                                            </div>
+                                            <!-- END - COLM 2 -->
+
+
+
+
+                                </div>
+                                <!-- END -->
+
+
+
+                                <!-- LEFT COLUMN -->
+                                <aside class="colmn1">
+
+                                    <img src="images/left-colmncontnt.jpg" />
+
+                                </aside>
+                                <!-- END -->
+
+
+
+                                <!-- RIGHT COLUMN -->
+                                <div class="colmn2">
+
+
+                                       <h5 class="hdngChoseOffr marginLeft_20px marginTop_12px">Choose an Offer:</h5>
+
+
+                                        <!-- STATIC BANNER -->
+                                        <div class="staticBanner">
+
+
+
+
+                                        </div>
+                                        <!-- END -->
+
+
+                                        <!-- TAB BUTTONS SECTION -->
+                                        <div class="tabContainer">
+
+
+
+
+                                                <!-- CONTENT BOX TAB1 -->
+                                                <div class="contentBox hide">
+
+                                                            <a href="page4.html" class="linkPatch_SelCstmize"></a>                                                            
+
+                                                            <img src="images/add-intrnt-contnt.jpg" />
+
+                                                </div>
+                                                <!-- END -->
+
+
+                                                <!-- CONTENT BOX TAB1 + TAB2 -->
+                                                <div class="contentBox">
+
+                                                            <img src="images/add-intrnt-phone-cntnt.jpg" />
+
+                                                </div>
+                                                <!-- END -->
+
+
+                                                <!-- CONTENT BOX TAB2 -->
+                                                <div class="contentBox hide">
+
+
+                                                            <img src="images/add-phone-cntnt.jpg" />
+
+                                                </div>
+                                                <!-- END -->
+
+
+
+                                        </div>
+                                        <!-- END -->
+
+
+
+
+
+                                </div>
+                                <!-- END -->
+
+
+
+
+                    </div>
+                    <!-- END -->
+
+
+
+                    <!-- FOOTER -->
+                    <footer class="header">
+
+                        <img src="images/footer.jpg" />
+
+                    </footer>
+                    <!-- END -->
+
+
+
+        </div>
+
+
+</div>
+
+
+
+</body>
+</html>
